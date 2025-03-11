@@ -1,0 +1,11 @@
+num1 =float (input("Enter the num1 "))
+num2 =float (input("Enter the num2 "))
+sum_Result= num1+num2
+difference_Result=num1-num2
+multiply_Result=num1*num2
+quiotent_Result=num1/num2
+print("\n Result")
+print("sum: ",sum_Result)
+print("Difference: ",difference_Result)
+print("multiply: ",multiply_Result)
+print("quiotent",quiotent_Result)
