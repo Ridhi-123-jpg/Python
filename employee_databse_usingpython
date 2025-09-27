@@ -1,0 +1,53 @@
+
+empdb=[]
+while True:
+    choice=int(input('''
+    Main Menu
+    1)Insert Employee Detaails
+    2)Update Salary
+    3)Remove Employee Details
+    4)Search Employee
+    5)Show all Employee:
+    6)Exit
+    Enter your choice'''))
+    if(choice==1):
+        emprec=[]
+        eid=int(input("enter eid"))
+        name=input("enter name")
+        sal=int(input("enter salary"))
+        did=int(input("enter did"))
+        emprec=[eid,name,sal,did]
+        empdb.append(emprec)
+        
+    elif(choice==2):
+        id=int(input("enter id whose salary you wnt to update"))
+        for i in empdb:
+            if(i[0]==eid):
+                s1=int(input("enter update salary"))
+                i[2]=s1
+            else:
+                 print("no such employee")
+    elif(choice==3):
+
+     rid=int(input("eneter id u want to remove"))
+     for i in empdb:
+         if(i[0]==rid):
+             empdb.remove(i)
+         else:
+             print("no such employee")
+         
+
+                
+    elif(choice==4):
+        eid=int(input("enter eid"))
+        for i in empdb:
+                if eid==i[0]:
+                    print(i)
+    elif(choice==5):
+        for i in empdb:
+            print(i)
+        
+    elif(choice==6):
+        break
+    else:
+        print("invalid choice")
