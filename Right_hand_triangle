@@ -1,0 +1,12 @@
+#Write a python program that accepts the length of three sides of a triangle as inputs. The program should indicate whether or not the triangle is a right handed triangle (Use pythagoras theorem)also find area using heron's formula
+a=int(input("enter the base side of triangle"))
+b=int(input("enter the perpendicular of triangle "))
+c=int(input("enter the hypotenuse of triangle"))
+if(c**2==b**2+a**2):
+    print("the triangle is right hande triangle")
+    print("the area of triangle is")
+    s=(a*b*c)//2
+    area=(s*((s-c)*(s-b)*(s-a)))**0.5
+    print(area)
+else:
+    print("the triangle is  not right handed triangle ")
