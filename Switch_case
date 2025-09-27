@@ -1,0 +1,15 @@
+
+Write a program to create a simple calculator using switch case and function for every operation
+ n1=int(input("enter the first number"))
+ n2=int(input("enter the second number"))
+ choice=int(input('''
+ 1.for addition
+ 2.for subtraction
+ 3.for multipication
+ 4.for division'''))
+ match choice:
+     case 1: print("addition",n1+n2)
+     case 2: print("subtraction",n1-n2)
+     case 3: print("multiplication",n1*n2)
+     case 4: print("division",n1//n2)
+     case _:print("Invalid choice")
