@@ -1,0 +1,16 @@
+ Write a program to reverse kth row in a matrix
+lst=[]
+r=int(input("enter the number of rows"))
+for i in range(r):
+    row=[]
+    for j in range(r):
+
+        ele=int(input(f"element at index{i}{j}"))
+        row.append(ele)
+    lst.append(row)
+print(lst)
+k=int(input("enter the list you want to reverse "))
+a=lst[k][::-1]
+lst.insert(k,a)
+lst.pop(k+1)
+print(lst)
